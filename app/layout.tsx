@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Ryan Henson | Software Developer",
-  description: "Personal website of Ryan Henson - Software Developer",
+  title: "Ryan Henson | Cybersecurity Engineer",
+  description: "Cybersecurity Engineer, Web Developer, and Security Researcher with 10 years of experience in enterprise and mission-critical environments.",
 };
 
 export default function RootLayout({
