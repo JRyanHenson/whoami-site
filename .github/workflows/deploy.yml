@@ -52,6 +52,8 @@ jobs:
           exit-code: '1'
           severity: 'CRITICAL,HIGH'
           format: 'table'
+          # Skip npm's internal dependencies - npm is only used during build, not at runtime
+          skip-dirs: '/usr/local/lib/node_modules'
 
       - name: Push image to Amazon ECR
         env:
