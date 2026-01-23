@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 export default function Home() {
   return (
     <div className="min-h-screen bg-black text-green-500 font-mono p-2 sm:p-4 md:p-8 overflow-x-hidden">
@@ -49,9 +47,8 @@ export default function Home() {
             </div>
             <div className="text-green-300/90 pl-2 space-y-2 sm:space-y-3 leading-relaxed text-[10px] sm:text-xs md:text-sm">
               <p>
-                Security engineer with 10 years of experience supporting U.S.
-                government agencies and private industry in enterprise and
-                mission-critical environments.
+                Security engineer with experience supporting government and 
+                private industry in enterprise and mission-critical environments.
               </p>
               <p>
                 Throughout my career, I&apos;ve focused on security assessments
@@ -120,18 +117,6 @@ export default function Home() {
                 </a>
                 <span className="text-green-500/50">
                   -&gt; hensojr@gmail.com
-                </span>
-              </div>
-              <div className="flex flex-wrap gap-x-2 sm:gap-x-4">
-                <span className="text-green-500/70">-rw-r--r--</span>
-                <Link
-                  href="/about"
-                  className="text-cyan-400 hover:text-cyan-300 hover:underline"
-                >
-                  about-site.md
-                </Link>
-                <span className="text-green-500/50">
-                  -&gt; how this site was built
                 </span>
               </div>
             </div>
