@@ -7,11 +7,13 @@ export default function Home() {
           {/* Terminal header */}
           <div className="border-b border-green-500/50 px-3 sm:px-4 py-2 flex items-center gap-2">
             <div className="flex gap-1.5">
-              <div className="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-red-500/80"></div>
-              <div className="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-yellow-500/80"></div>
-              <div className="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-green-500/80"></div>
+              <div className="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-red-500/80" />
+              <div className="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-yellow-500/80" />
+              <div className="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-green-500/80" />
             </div>
-            <span className="text-green-500/70 text-xs sm:text-sm ml-2">ryan@whoami:~</span>
+            <span className="text-green-500/70 text-xs sm:text-sm ml-2">
+              ryan@whoami:~
+            </span>
           </div>
 
           {/* Terminal content */}
@@ -21,13 +23,15 @@ export default function Home() {
               <span className="text-green-400">$</span> whoami
             </div>
 
-            {/* ASCII name - scales down on mobile */}
-            <pre className="text-green-400 text-[7px] sm:text-xs md:text-sm leading-tight whitespace-pre">{`  ____                    _   _
+            {/* ASCII name */}
+            <pre className="text-green-400 text-[7px] sm:text-xs md:text-sm leading-tight whitespace-pre">
+{`  ____                    _   _
  |  _ \\ _   _  __ _ _ __ | | | | ___ _ __  ___  ___  _ __
  | |_) | | | |/ _\` | '_ \\| |_| |/ _ \\ '_ \\/ __|/ _ \\| '_ \\
  |  _ <| |_| | (_| | | | |  _  |  __/ | | \\__ \\ (_) | | | |
  |_| \\_\\\\__, |\\__,_|_| |_|_| |_|\\___|_| |_|___/\\___/|_| |_|
-        |___/`}</pre>
+        |___/`}
+            </pre>
 
             {/* Title */}
             <div>
@@ -48,13 +52,13 @@ export default function Home() {
                 mission-critical environments.
               </p>
               <p>
-                Throughout my career, I&apos;ve focused on security assessments and
-                risk analysis, integrating and operating security tools at scale,
-                supporting secure development efforts, and automating security
-                risk assessment and reporting workflows. This work gave me a
-                strong foundation in how security programs function in real-world
-                environments and how to turn technical findings into meaningful
-                risk reduction.
+                Throughout my career, I&apos;ve focused on security assessments
+                and risk analysis, integrating and operating security tools at
+                scale, supporting secure development efforts, and automating
+                security risk assessment and reporting workflows. This work gave
+                me a strong foundation in how security programs function in
+                real-world environments and how to turn technical findings into
+                meaningful risk reduction.
               </p>
               <p>
                 More recently, my focus has shifted toward security research,
@@ -64,8 +68,8 @@ export default function Home() {
                 theoretical or checklist-driven approaches.
               </p>
               <p>
-                I&apos;m also passionate about applying AI to solve security problems,
-                particularly in areas like automation, analysis, and improving
+                I&apos;m also passionate about applying AI to solve security
+                problems, particularly in automation, analysis, and improving
                 signal-to-noise so security teams can move faster and make
                 better decisions.
               </p>
@@ -86,7 +90,9 @@ export default function Home() {
                 >
                   github/
                 </a>
-                <span className="text-green-500/50">-&gt; github.com/JRyanHenson</span>
+                <span className="text-green-500/50">
+                  -&gt; github.com/JRyanHenson
+                </span>
               </div>
               <div className="flex flex-wrap gap-x-2 sm:gap-x-4">
                 <span className="text-green-500/70">drwxr-xr-x</span>
@@ -98,7 +104,9 @@ export default function Home() {
                 >
                   linkedin/
                 </a>
-                <span className="text-green-500/50">-&gt; linkedin.com/in/j-ryan-henson</span>
+                <span className="text-green-500/50">
+                  -&gt; linkedin.com/in/j-ryan-henson
+                </span>
               </div>
               <div className="flex flex-wrap gap-x-2 sm:gap-x-4">
                 <span className="text-green-500/70">-rw-r--r--</span>
@@ -108,14 +116,16 @@ export default function Home() {
                 >
                   email.txt
                 </a>
-                <span className="text-green-500/50">-&gt; hensojr@gmail.com</span>
+                <span className="text-green-500/50">
+                  -&gt; hensojr@gmail.com
+                </span>
               </div>
             </div>
 
             {/* Cursor */}
             <div className="pt-3 sm:pt-4">
               <span className="text-green-400">$</span>
-              <span className="inline-block w-2 h-3 sm:h-4 bg-green-500 ml-1 animate-pulse"></span>
+              <span className="inline-block w-2 h-3 sm:h-4 bg-green-500 ml-1 animate-pulse" />
             </div>
           </div>
         </div>
