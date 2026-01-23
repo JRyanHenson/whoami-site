@@ -4,8 +4,13 @@ output "alb_dns_name" {
 }
 
 output "alb_url" {
-  description = "Full URL to access the application"
+  description = "Full URL to access the application (ALB)"
   value       = "http://${aws_lb.main.dns_name}"
+}
+
+output "website_url" {
+  description = "Website URL with custom domain"
+  value       = "https://${var.domain_name}"
 }
 
 output "ecr_repository_url" {
