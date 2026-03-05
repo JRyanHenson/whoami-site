@@ -40,7 +40,7 @@ export default function Home() {
               <span className="text-green-400">$</span> cat title.txt
             </div>
             <div className="text-amber-400 pl-2 text-[10px] sm:text-xs md:text-sm">
-              Cybersecurity Engineer | Web Developer | Security Researcher
+              IT and Cybersecurity Professional | Developer
             </div>
 
             {/* Bio */}
@@ -49,30 +49,39 @@ export default function Home() {
             </div>
             <div className="text-green-300/90 pl-2 space-y-2 sm:space-y-3 leading-relaxed text-[10px] sm:text-xs md:text-sm">
               <p>
-                Security engineer with experience supporting government and 
-                private industry in enterprise and mission-critical environments.
+                Experienced IT professional with a background spanning systems
+                engineering, automation, and cybersecurity across government and
+                private industry environments.
               </p>
               <p>
-                Throughout my career, I&apos;ve focused on security assessments
-                and risk analysis, integrating and operating security tools at
-                scale, supporting secure development efforts, and automating
-                security risk assessment and reporting workflows. This work gave
-                me a strong foundation in how security programs function in
-                real-world environments and how to turn technical findings into
-                meaningful risk reduction.
+                Throughout my career I&apos;ve focused on building and deploying
+                automation solutions, integrating and operating tools at scale,
+                supporting secure development efforts, and writing scripts and
+                pipelines to streamline workflows and data analysis. Working
+                across federal defense, national laboratory, and agency
+                environments gave me a deep understanding of how to deliver
+                technical solutions that balance operational requirements,
+                security controls, and real-world constraints.
               </p>
               <p>
-                More recently, my focus has shifted toward security research,
-                bug bounty work, and offensive security. I&apos;m interested in
+                On the security side, my experience includes security
+                assessments and risk analysis, integrating security tooling into
+                enterprise environments, and supporting secure development
+                efforts — giving me the ability to think about systems from both
+                an engineering and adversarial perspective.
+              </p>
+              <p>
+                More recently, my focus has expanded into security research, bug
+                bounty work, and offensive security. I&apos;m interested in
                 understanding how systems actually fail and using hands-on
-                testing to validate risk rather than relying solely on
-                theoretical or checklist-driven approaches.
+                testing to validate risk — rather than relying on theoretical or
+                checklist-driven approaches.
               </p>
               <p>
-                I&apos;m also passionate about applying AI to solve security
-                problems, particularly in automation, analysis, and improving
-                signal-to-noise so security teams can move faster and make
-                better decisions.
+                I&apos;m also passionate about applying AI to solve hard
+                problems, particularly in automation, data analysis, and
+                improving signal-to-noise so engineering and security teams can
+                move faster and make better decisions.
               </p>
             </div>
 
