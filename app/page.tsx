@@ -40,7 +40,7 @@ export default function Home() {
               <span className="text-green-400">$</span> cat title.txt
             </div>
             <div className="text-amber-400 pl-2 text-[10px] sm:text-xs md:text-sm">
-              IT and Cybersecurity Professional | Developer
+              IT Professional | Cybersecurity Engineer | Developer
             </div>
 
             {/* Bio */}
