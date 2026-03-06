@@ -49,39 +49,35 @@ export default function Home() {
             </div>
             <div className="text-green-300/90 pl-2 space-y-2 sm:space-y-3 leading-relaxed text-[10px] sm:text-xs md:text-sm">
               <p>
-                Experienced IT professional with a background spanning systems
-                engineering, automation, and cybersecurity across government and
-                private industry environments.
+                Experienced IT and cybersecurity professional with a background
+                spanning systems engineering, automation, and security across
+                government and private industry environments. As a U.S. Navy
+                veteran, I bring a mission-focused mindset and strong commitment
+                to service, both in my professional work and in my community.
               </p>
               <p>
-                Throughout my career I&apos;ve focused on building and deploying
-                automation solutions, integrating and operating tools at scale,
-                supporting secure development efforts, and writing scripts and
-                pipelines to streamline workflows and data analysis. Working
-                across federal defense, national laboratory, and agency
-                environments gave me a deep understanding of how to deliver
-                technical solutions that balance operational requirements,
-                security controls, and real-world constraints.
+                Throughout my career, I&apos;ve worked across a range of
+                technical roles focused on designing, improving, and operating
+                complex systems in secure environments. My experience includes
+                supporting enterprise infrastructure, implementing technical
+                solutions that improve reliability and visibility, and helping
+                teams integrate security into everyday engineering and
+                operational practices.
               </p>
               <p>
-                On the security side, my experience includes security
-                assessments and risk analysis, integrating security tooling into
-                enterprise environments, and supporting secure development
-                efforts — giving me the ability to think about systems from both
-                an engineering and adversarial perspective.
+                My cybersecurity experience includes conducting security
+                assessments, performing risk analysis, and integrating security
+                tools into enterprise environments. More recently, I&apos;ve
+                expanded into security research and bug bounty work, using
+                hands-on testing to better understand how systems actually fail
+                and to strengthen defenses through practical, real-world
+                validation rather than purely theoretical approaches.
               </p>
               <p>
-                More recently, my focus has expanded into security research, bug
-                bounty work, and offensive security. I&apos;m interested in
-                understanding how systems actually fail and using hands-on
-                testing to validate risk — rather than relying on theoretical or
-                checklist-driven approaches.
-              </p>
-              <p>
-                I&apos;m also passionate about applying AI to solve hard
-                problems, particularly in automation, data analysis, and
-                improving signal-to-noise so engineering and security teams can
-                move faster and make better decisions.
+                Outside of work, I care deeply about my local community and
+                enjoy contributing through volunteer work and leadership roles
+                that help strengthen the places where my family and neighbors
+                live.
               </p>
             </div>
 
