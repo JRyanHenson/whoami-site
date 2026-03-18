@@ -140,6 +140,25 @@ export default function Home() {
               </div>
             </div>
 
+            {/* Cybersecurity Tools */}
+            <div className="pt-2">
+              <span className="text-green-400">$</span> ls -la ./tools/
+            </div>
+            <div className="pl-2 space-y-1 text-[9px] sm:text-xs md:text-sm">
+              <div className="flex flex-wrap gap-x-2 sm:gap-x-4">
+                <span className="text-green-500/70">-rwxr-xr-x</span>
+                <a
+                  href="/tools/hibp/"
+                  className="text-cyan-400 hover:text-cyan-300 hover:underline"
+                >
+                  hibp-checker
+                </a>
+                <span className="text-green-500/50">
+                  -&gt; check email against known data breaches
+                </span>
+              </div>
+            </div>
+
             {/* Cursor */}
             <div className="pt-3 sm:pt-4">
               <span className="text-green-400">$</span>

@@ -27,3 +27,13 @@ output "ecs_service_name" {
   description = "Name of the ECS service"
   value       = aws_ecs_service.main.name
 }
+
+output "hibp_ecr_repository_url" {
+  description = "URL of the hibp-webapp ECR repository"
+  value       = aws_ecr_repository.hibp.repository_url
+}
+
+output "hibp_ecs_service_name" {
+  description = "Name of the hibp-webapp ECS service"
+  value       = aws_ecs_service.hibp.name
+}

@@ -19,7 +19,7 @@ export default function About() {
           </div>
 
           {/* Terminal content */}
-          <div className="p-3 sm:p-4 md:p-6 space-y-3 sm:space-y-4 text-xs sm:text-sm md:text-base">
+          <div className="p-3 sm:p-4 md:p-6 space-y-2 sm:space-y-3 text-xs sm:text-sm md:text-base">
             {/* Header */}
             <div>
               <span className="text-green-400">$</span> cat README.md
@@ -30,15 +30,16 @@ export default function About() {
             </div>
 
             <div className="text-green-300/90 pl-2 leading-relaxed text-[10px] sm:text-xs md:text-sm">
-              This site serves as both a personal landing page and a learning project
-              for modern cloud infrastructure, containerization, and CI/CD automation.
+              This site serves as both a personal landing page and a living DevSecOps
+              project — a platform for deploying cybersecurity micro-apps alongside
+              modern cloud infrastructure, containerization, and CI/CD automation.
             </div>
 
             {/* Tech Stack */}
-            <div className="pt-2">
+            <div>
               <span className="text-green-400">$</span> cat stack.json
             </div>
-            <div className="pl-2 space-y-2 text-[10px] sm:text-xs md:text-sm">
+            <div className="pl-2 space-y-1 text-[10px] sm:text-xs md:text-sm">
               <div className="text-cyan-400">{"{"}</div>
               <div className="pl-4">
                 <span className="text-purple-400">&quot;frontend&quot;</span>
@@ -47,15 +48,27 @@ export default function About() {
                 <span className="text-green-500">,</span>
               </div>
               <div className="pl-4">
-                <span className="text-purple-400">&quot;container&quot;</span>
+                <span className="text-purple-400">&quot;tools&quot;</span>
                 <span className="text-green-500">: </span>
-                <span className="text-amber-300">&quot;Docker (multi-stage Alpine build)&quot;</span>
+                <span className="text-amber-300">&quot;Python + Flask (cybersecurity micro-apps)&quot;</span>
+                <span className="text-green-500">,</span>
+              </div>
+              <div className="pl-4">
+                <span className="text-purple-400">&quot;containers&quot;</span>
+                <span className="text-green-500">: </span>
+                <span className="text-amber-300">&quot;Docker multi-stage builds, non-root users&quot;</span>
                 <span className="text-green-500">,</span>
               </div>
               <div className="pl-4">
                 <span className="text-purple-400">&quot;hosting&quot;</span>
                 <span className="text-green-500">: </span>
-                <span className="text-amber-300">&quot;AWS ECS Fargate&quot;</span>
+                <span className="text-amber-300">&quot;AWS ECS Fargate (two services, one cluster)&quot;</span>
+                <span className="text-green-500">,</span>
+              </div>
+              <div className="pl-4">
+                <span className="text-purple-400">&quot;routing&quot;</span>
+                <span className="text-green-500">: </span>
+                <span className="text-amber-300">&quot;ALB path-based routing (/tools/* → micro-apps)&quot;</span>
                 <span className="text-green-500">,</span>
               </div>
               <div className="pl-4">
@@ -73,55 +86,75 @@ export default function About() {
             </div>
 
             {/* Security */}
-            <div className="pt-2">
+            <div>
               <span className="text-green-400">$</span> cat security.log
             </div>
-            <div className="pl-2 space-y-1.5 text-[10px] sm:text-xs md:text-sm">
+            <div className="pl-2 space-y-1 text-[10px] sm:text-xs md:text-sm">
               <div>
                 <span className="text-green-500/70">[INFO]</span>
-                <span className="text-green-300/90"> Container runs as non-root user</span>
+                <span className="text-green-300/90"> All containers run as non-root users</span>
               </div>
               <div>
                 <span className="text-green-500/70">[INFO]</span>
-                <span className="text-green-300/90"> Multi-stage Docker build minimizes attack surface</span>
+                <span className="text-green-300/90"> Multi-stage Docker builds minimize attack surface</span>
               </div>
               <div>
                 <span className="text-green-500/70">[INFO]</span>
-                <span className="text-green-300/90"> Trivy vulnerability scanning blocks high/critical CVEs</span>
+                <span className="text-green-300/90"> Trivy container scanning blocks high/critical CVEs pre-deploy</span>
               </div>
               <div>
                 <span className="text-green-500/70">[INFO]</span>
-                <span className="text-green-300/90"> Weekly scheduled rebuilds pull latest security patches</span>
+                <span className="text-green-300/90"> Gitleaks scans full git history for leaked secrets</span>
               </div>
               <div>
                 <span className="text-green-500/70">[INFO]</span>
-                <span className="text-green-300/90"> ECR lifecycle policy limits stored image versions</span>
+                <span className="text-green-300/90"> Bandit + pip-audit scan Python code and dependencies</span>
               </div>
               <div>
                 <span className="text-green-500/70">[INFO]</span>
-                <span className="text-green-300/90"> Security groups restrict traffic to necessary ports only</span>
+                <span className="text-green-300/90"> API keys stored in AWS Secrets Manager, never in task definitions</span>
+              </div>
+              <div>
+                <span className="text-green-500/70">[INFO]</span>
+                <span className="text-green-300/90"> ALB security groups isolate containers from direct internet access</span>
+              </div>
+              <div>
+                <span className="text-green-500/70">[INFO]</span>
+                <span className="text-green-300/90"> Weekly scheduled rebuilds pull latest base image patches</span>
               </div>
             </div>
 
             {/* Architecture */}
-            <div className="pt-2">
+            <div>
               <span className="text-green-400">$</span> cat architecture.txt
             </div>
             <pre className="text-green-300/80 pl-2 text-[8px] sm:text-[10px] md:text-xs leading-tight whitespace-pre overflow-x-auto">
-{`┌─────────────┐     ┌─────────────┐     ┌─────────────┐
-│   GitHub    │────▶│   GitHub    │────▶│   Amazon    │
-│    Repo     │     │   Actions   │     │     ECR     │
-└─────────────┘     └─────────────┘     └─────────────┘
-                                               │
-                                               ▼
-┌─────────────┐     ┌─────────────┐     ┌─────────────┐
-│   Users     │────▶│     ALB     │────▶│ ECS Fargate │
-│             │     │             │     │             │
-└─────────────┘     └─────────────┘     └─────────────┘`}
+{`┌──────────────┐  ┌──────────────┐  ┌──────────────┐
+│ GitHub Repos │─▶│    GitHub    │─▶│  Amazon ECR  │
+│ (site+tools) │  │   Actions    │  │  (2 repos)   │
+└──────────────┘  └──────────────┘  └──────┬───────┘
+                                           │
+                  ┌────────────────────────┘
+                  ▼
+┌────────────────────────────────────────────────┐
+│              ECS Fargate Cluster               │
+│  ┌──────────────────┐  ┌──────────────────┐    │
+│  │   whoami-site    │  │   hibp-webapp    │    │
+│  │  Next.js  :3000  │  │  Flask   :8000   │    │
+│  └──────────────────┘  └──────────────────┘    │
+└────────────────────────┬───────────────────────┘
+                         ▼
+       ┌────────────────────────────────────┐
+       │   Application Load Balancer        │
+       │   /*       →  whoami-site          │
+       │   /tools/* →  hibp-webapp          │
+       └─────────────────┬──────────────────┘
+                         ▼
+                       Users`}
             </pre>
 
             {/* Back link */}
-            <div className="pt-4">
+            <div>
               <span className="text-green-400">$</span> cd ~
             </div>
             <div className="pl-2">
@@ -134,7 +167,7 @@ export default function About() {
             </div>
 
             {/* Cursor */}
-            <div className="pt-3 sm:pt-4">
+            <div>
               <span className="text-green-400">$</span>
               <span className="inline-block w-2 h-3 sm:h-4 bg-green-500 ml-1 animate-pulse" />
             </div>
