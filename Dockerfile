@@ -22,6 +22,10 @@ WORKDIR /app
 ENV NODE_ENV=production
 ENV NEXT_TELEMETRY_DISABLED=1
 
+# Upgrade all Alpine packages to pick up security patches that have
+# been released but not yet baked into the base image (e.g. zlib CVE-2026-22184)
+RUN apk upgrade --no-cache
+
 RUN addgroup --system --gid 1001 nodejs
 RUN adduser --system --uid 1001 nextjs
 
