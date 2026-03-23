@@ -157,6 +157,18 @@ export default function Home() {
                   -&gt; check email against known data breaches
                 </span>
               </div>
+              <div className="flex flex-wrap gap-x-2 sm:gap-x-4">
+                <span className="text-green-500/70">-rwxr-xr-x</span>
+                <a
+                  href="/tools/pwned-password/"
+                  className="text-cyan-400 hover:text-cyan-300 hover:underline"
+                >
+                  pwned-password
+                </a>
+                <span className="text-green-500/50">
+                  -&gt; check password against known data breaches
+                </span>
+              </div>
             </div>
 
             {/* Cursor */}
