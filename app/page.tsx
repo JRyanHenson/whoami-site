@@ -142,7 +142,7 @@ export default function Home() {
 
             {/* Cybersecurity Tools */}
             <div className="pt-2">
-              <span className="text-green-400">$</span> ls -la ./tools/
+              <span className="text-green-400">$</span> ls -la <Link href="/tools" className="hover:text-green-300 hover:underline">./tools/</Link>
             </div>
             <div className="pl-2 space-y-1 text-[9px] sm:text-xs md:text-sm">
               <div className="flex flex-wrap gap-x-2 sm:gap-x-4">
