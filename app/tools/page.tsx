@@ -7,6 +7,12 @@ const tools = [
     href: "/tools/hibp/",
     status: "active",
   },
+  {
+    command: "pwned-password",
+    description: "Check if a password has appeared in a known data breach using k-anonymity",
+    href: "/tools/pwned-password/",
+    status: "active",
+  },
 ];
 
 export default function ToolsPage() {
