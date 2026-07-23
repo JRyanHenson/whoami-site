@@ -27,7 +27,7 @@ jobs:
         uses: actions/checkout@v7
 
       - name: Configure AWS credentials
-        uses: aws-actions/configure-aws-credentials@v4
+        uses: aws-actions/configure-aws-credentials@v6
         with:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
@@ -53,6 +53,7 @@ jobs:
           exit-code: '1'
           severity: 'CRITICAL,HIGH'
           format: 'table'
+          trivyignores: .trivyignore
           # Skip npm's internal dependencies - npm is only used during build, not at runtime
           skip-dirs: '/usr/local/lib/node_modules'
 
