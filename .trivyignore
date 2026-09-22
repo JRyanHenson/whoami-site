@@ -1,4 +1,0 @@
-# next@16.2.11 requires sharp@^0.34.5 as an optional dep. The fix (sharp 0.35.0)
-# is not yet supported by any stable Next.js release (tracked upstream in the
-# 16.3.x line). Accepted until Next.js ships a compatible version.
-GHSA-f88m-g3jw-g9cj

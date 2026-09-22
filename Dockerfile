@@ -26,6 +26,12 @@ ENV NEXT_TELEMETRY_DISABLED=1
 # been released but not yet baked into the base image (e.g. zlib CVE-2026-22184)
 RUN apk upgrade --no-cache
 
+# Runtime only needs the `node` binary to run server.js — strip the
+# bundled npm/npx/corepack tooling (and their vulnerable transitive
+# deps like tar/pacote/brace-expansion) out of the final image.
+RUN rm -rf /usr/local/lib/node_modules/npm /usr/local/lib/node_modules/corepack \
+    /usr/local/bin/npm /usr/local/bin/npx /usr/local/bin/corepack
+
 RUN addgroup --system --gid 1001 nodejs
 RUN adduser --system --uid 1001 nextjs
 
