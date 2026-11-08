@@ -1,0 +1,30 @@
+# Dependabot keeps the base image, npm packages, and Actions current.
+# The base image is pinned by digest, so when Docker republishes
+# node:22-alpine with OS security patches, Dependabot opens a PR to
+# bump the digest. Merging it runs the full gated pipeline and redeploys.
+version: 2
+updates:
+  - package-ecosystem: docker
+    directory: /
+    schedule:
+      interval: weekly
+    groups:
+      base-image:
+        patterns: ["*"]
+
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: weekly
+    groups:
+      npm-deps:
+        patterns: ["*"]
+        update-types: ["minor", "patch"]
+
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+    groups:
+      actions:
+        patterns: ["*"]
